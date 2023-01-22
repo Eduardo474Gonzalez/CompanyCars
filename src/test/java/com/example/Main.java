@@ -103,7 +103,7 @@ public class Main {
            // for (Company company : companies) {
                 for (Employee employee : company.getEmployees()) {
                     for (Car car : employee.getCars()) {
-                        System.out.println(car.toString());
+                        System.out.println(Car.toString());
                     }
                 }
             }

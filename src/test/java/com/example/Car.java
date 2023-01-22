@@ -18,6 +18,11 @@ public class Car {
         this.price = price;
     }
 
+
+
+
+
+
     public String getModel() {
         return model;
     }
@@ -51,7 +56,7 @@ public class Car {
     }
 
     @Override
-    public String toString() {
+    public static String toString() {
         return "Car{" +
                 "model='" + model + '\'' +
                 ", color='" + color + '\'' +
