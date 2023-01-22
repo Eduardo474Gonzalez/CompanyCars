@@ -3,12 +3,14 @@ package com.example;
 import java.util.ArrayList;
 import java.util.HashSet;
 
+
 public class Company {
 
     private String name;
     private String cif;
 
  private ArrayList<Employee> employees = new ArrayList<>();
+
 
  public Company() {
 
