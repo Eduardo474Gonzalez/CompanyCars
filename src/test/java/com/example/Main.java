@@ -1,7 +1,8 @@
 package com.example;
 
 import java.util.ArrayList;
-import java.util.Arrays;
+
+import java.util.HashSet;
 import java.util.List;
 public class Main {
 
@@ -80,6 +81,7 @@ public class Main {
         ArrayList<Company> companies = new ArrayList<>(List.of(comp1, comp2));
 
         ArrayList<Car> allCars = new ArrayList<>();
+       // HashSet<Car> allCar = new HashSet<>();
 
         for (Company company : companies) {
             System.out.println(company);
