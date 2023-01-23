@@ -12,6 +12,7 @@ public class Company {
  private ArrayList<Employee> employees = new ArrayList<>();
 
 
+
  public Company() {
 
  }

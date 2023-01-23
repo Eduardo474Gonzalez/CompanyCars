@@ -31,6 +31,8 @@ public class Car {
         this.model = model;
     }
 
+
+
    public String getColor() {
         return color;
    }
@@ -56,7 +58,7 @@ public class Car {
     }
 
     @Override
-    public static String toString() {
+    public String toString() {
         return "Car{" +
                 "model='" + model + '\'' +
                 ", color='" + color + '\'' +

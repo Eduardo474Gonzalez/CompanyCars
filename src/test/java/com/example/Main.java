@@ -48,11 +48,11 @@ public class Main {
         carsEmp5.add(car13);
         carsEmp5.add(car14);
 
-        System.out.println (carsEmp1);
-        System.out.println (carsEmp2);
-        System.out.println (carsEmp3);
-        System.out.println (carsEmp4);
-        System.out.println (carsEmp5);
+        System.out.println("carsEmp1");
+        System.out.println("carsEmp2" + "carsEmp3");
+        System.out.println("carsEmp3" + "carsEmp4" + "carsEmp5");
+        System.out.println("carsEmp4" + "carsEmp5" + "carsEmp6" + "carsEmp7" + "carsEmp8");
+        System.out.println("carsEmp9" + "carsEmp10" + "carsEmp11" + "carsEmp12" + "carsEmp13" + "carsEmp14");
 
         Employee emp1 = new Employee("Luis", "33456985B", "Heineken", carsEmp1);
         Employee emp2 = new Employee("Marta", "123456987D", "Facundo", carsEmp1);
@@ -61,19 +61,20 @@ public class Main {
         Employee emp5 = new Employee("Marcos", "365369865K", "Lays", carsEmp1);
         Employee emp6 = new Employee("Arancha", "268954781N", "Danone", carsEmp1);
 
-        System.out.println (emp1);
-        System.out.println (emp2);
-        System.out.println (emp3);
-        System.out.println (emp4);
-        System.out.println (emp5);
-        System.out.println (emp6);
+        System.out.println(emp1);
+        System.out.println(emp2);
+        System.out.println(emp3);
+        System.out.println(emp4);
+        System.out.println(emp5);
+        System.out.println(emp6);
 
-        Company comp1 = new Company("comp1", "1212B", new ArrayList<>(List.of(emp1, emp2)));
-        Company comp2 = new Company("comp2", "1212B", new ArrayList<>(List.of(emp3, emp4)));
+        Company comp1 = new Company("Heineken", "1212B", new ArrayList<>(List.of(emp1, emp2)));
+        Company comp2 = new Company("CocaCola", "1212B", new ArrayList<>(List.of(emp3, emp4)));
+        Company comp3 = new Company("CocaCola", "1212B", new ArrayList<>(List.of(emp4, emp5)));
 
-        System.out.println (comp1);
-        System.out.println (comp2);
 
+        System.out.println(comp1);
+        System.out.println(comp2);
 
 
         ArrayList<Company> companies = new ArrayList<>(List.of(comp1, comp2));
@@ -81,7 +82,7 @@ public class Main {
         ArrayList<Car> allCars = new ArrayList<>();
 
         for (Company company : companies) {
-            System.out.println (company);
+            System.out.println(company);
         }
 
 
@@ -92,7 +93,6 @@ public class Main {
                 allCars.addAll(employee.getCars());
 
 
-
             }
 
 
@@ -100,16 +100,11 @@ public class Main {
                 System.out.println(car);
             }
 
-           // for (Company company : companies) {
-                for (Employee employee : company.getEmployees()) {
-                    for (Car car : employee.getCars()) {
-                        System.out.println(Car.toString());
-                    }
-                }
+
             }
         }
 
+    }
 
-}
 
 
